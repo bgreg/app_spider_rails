@@ -1,8 +1,8 @@
 # AppSpiderRails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/app_spider_rails`. To experiment with that code, run `bin/console` for an interactive prompt.
+[AppSpider](https://www.rapid7.com/products/appspider/) is a Rapid7 scanner for discovering vulnerabilities in your web apps.  This gem provides a simplified
+interface for their rest API making it easier to integrate to a rails app.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +22,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
 
 ## Development
 
