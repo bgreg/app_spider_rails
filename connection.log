@@ -1,0 +1,2 @@
+# Logfile created on 2016-03-22 18:36:14 -0700 by logger.rb/53141
+I, [2016-03-22T18:36:14.722673 #935]  INFO -- : attempting to connect to: http://appspider.com/AppSpiderEnterprise/rest/v1/Authentication/Login
