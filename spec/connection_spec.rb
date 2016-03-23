@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'app_spider_rails/base'
 require 'app_spider_rails/connection'
 require 'app_spider_rails/user'
 

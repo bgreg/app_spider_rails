@@ -10,13 +10,14 @@ module AppSpiderRails
     end
 
     def initialize(url, options = {})
-      @log = options.fetch(:logger, AppSpiderRails.set_logger)
-      @uri = url + PATH[:base]
+      @log   = options.fetch(:log, AppSpiderRails.set_logger)
+      @paths = options.fetch(:paths, AppSpiderRails.load_paths)
+      @uri   = url + @paths.fetch(:base)
     end
 
     def authenticate(user)
-      path = URI(@uri + PATH[:login])
-      @log.info("attempting to connect to: #{path}")
+      path = URI(uri + paths.fetch(:login))
+      log.info("attempting to connect to: #{path}")
 
       Net::HTTP.post_form(
         path,
@@ -24,5 +25,9 @@ module AppSpiderRails
         password: user.password
       )
     end
+
+    private
+
+    attr_accessor :log, :paths
   end
 end
