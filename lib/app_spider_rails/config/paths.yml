@@ -1,2 +1,2 @@
-:base:  AppSpiderEnterprise/rest/v1/
+:url:  http://myserver.com/AppSpiderEnterprise/rest/v1/
 :login: Authentication/Login

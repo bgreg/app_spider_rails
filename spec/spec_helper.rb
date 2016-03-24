@@ -1,6 +1,13 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'app_spider_rails'
+
+require 'bundler/setup'
+Bundler.setup
+
 require 'webmock/rspec'
 require 'pry'
+require "net/http"
+require "logger"
+
+require 'app_spider_rails'
 
 WebMock.disable_net_connect!(allow_localhost: true)

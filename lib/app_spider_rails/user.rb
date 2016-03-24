@@ -1,6 +1,7 @@
 module AppSpiderRails
   class User
-    attr_accessor :username, :password, :auth_token
+    attr_accessor :username, :password
+
     def initialize(username, password)
       @username = username
       @password = password

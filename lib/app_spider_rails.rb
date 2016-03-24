@@ -8,6 +8,7 @@ require "app_spider_rails/connection"
 require "app_spider_rails/user"
 require "app_spider_rails/cannot_authenticate"
 require "app_spider_rails/response"
+require "app_spider_rails/findings/get_vulnerabilities"
 
 module AppSpiderRails
 end
