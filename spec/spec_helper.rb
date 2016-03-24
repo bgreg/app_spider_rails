@@ -10,4 +10,10 @@ require "logger"
 
 require 'app_spider_rails'
 
+Dir[File.expand_path("spec/support/**/*.rb")].each { |f| require f }
+
 WebMock.disable_net_connect!(allow_localhost: true)
+
+RSpec.configure do |c|
+  c.include WebMockStubs
+end

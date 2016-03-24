@@ -9,6 +9,7 @@ require "app_spider_rails/user"
 require "app_spider_rails/cannot_authenticate"
 require "app_spider_rails/response"
 require "app_spider_rails/findings/get_vulnerabilities"
+require "app_spider_rails/http"
 
 module AppSpiderRails
 end
